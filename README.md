@@ -50,7 +50,7 @@ Como usar
 
 Clone este repositório:
 
-git clone https://github.com/seu-usuario/booknest.git
+git clone https://github.com/infolearnbald/booknest.git
 
 
 Abra o arquivo index.html no navegador para testar localmente.
