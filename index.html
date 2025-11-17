@@ -14,14 +14,23 @@
             <h1>BookNest</h1>
         </div>
         <nav>
-            <button id="btnExplorar">Explorar livros</button>
-            <button id="btnFisicos">Livros Físicos</button>
-            <button id="btnComentarios">Comentários</button>
-            <button id="btnContato">Contato</button>
+            <div class="nav-left">
+                <button id="btnExplorar">Explorar livros</button>
+                <button id="btnFisicos">Livros Físicos</button>
+            </div>
+            <div class="nav-right">
+                <button id="btnComentarios">Comentários</button>
+                <button id="btnContato">Contato</button>
+            </div>
         </nav>
     </header>
 
     <main>
+        <section id="pesquisa">
+            <input type="text" id="searchInput" placeholder="Pesquisar livros...">
+            <button id="searchBtn">🔍</button>
+        </section>
+
         <section id="livros">
             <h2>Catálogo de Livros</h2>
             <div class="livros-container">
@@ -31,9 +40,11 @@
 
         <section id="comentarios">
             <h2>Comentários & Sugestões</h2>
-            <div class="comentarios-container"></div>
-            <textarea id="novoComentario" placeholder="Escreva seu comentário..."></textarea>
-            <button id="btnEnviarComentario">Enviar</button>
+            <div class="comentarios-box">
+                <div class="comentarios-container"></div>
+                <textarea id="novoComentario" placeholder="Escreva seu comentário..."></textarea>
+                <button id="btnEnviarComentario">Enviar</button>
+            </div>
         </section>
     </main>
 
@@ -43,5 +54,24 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Pesquisa de livros
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const livrosContainer = document.querySelector('.livros-container');
+
+        searchBtn.addEventListener('click', () => {
+            const query = searchInput.value.toLowerCase();
+            const cards = livrosContainer.querySelectorAll('.livro-card');
+            cards.forEach(card => {
+                const titulo = card.querySelector('h3').textContent.toLowerCase();
+                if(titulo.includes(query)){
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
