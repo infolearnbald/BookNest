@@ -1,26 +1,27 @@
-// Livros exemplo (mais de 20)
+// Livros exemplo (mais de 20), incluindo gratuitos com download
 const livros = [
     {titulo:"JavaScript Básico", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro1.jpg", linkDownload:"assets/livros/pdf/js_basico.pdf"},
-    {titulo:"Node.js Avançado", autor:"R. Gustavo", preco:"25 USD", digital:true, fisico:true, capa:"assets/livros/livro2.jpg"},
     {titulo:"CSS Moderno", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:true, capa:"assets/livros/livro3.jpg", linkDownload:"assets/livros/pdf/css_moderno.pdf"},
-    {titulo:"React do Zero", autor:"R. Gustavo", preco:"30 USD", digital:true, fisico:true, capa:"assets/livros/livro4.jpg"},
     {titulo:"Python para Iniciantes", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro5.jpg", linkDownload:"assets/livros/pdf/python.pdf"},
-    {titulo:"Inteligência Artificial", autor:"R. Gustavo", preco:"40 USD", digital:true, fisico:true, capa:"assets/livros/livro6.jpg"},
     {titulo:"HTML5 Essencial", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro7.jpg", linkDownload:"assets/livros/pdf/html5.pdf"},
-    {titulo:"Vue.js Prático", autor:"R. Gustavo", preco:"35 USD", digital:true, fisico:true, capa:"assets/livros/livro8.jpg"},
-    {titulo:"Machine Learning", autor:"R. Gustavo", preco:"50 USD", digital:true, fisico:true, capa:"assets/livros/livro9.jpg"},
     {titulo:"Banco de Dados MySQL", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro10.jpg", linkDownload:"assets/livros/pdf/mysql.pdf"},
     {titulo:"Git e GitHub", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro11.jpg", linkDownload:"assets/livros/pdf/git.pdf"},
+    {titulo:"Segurança em Redes", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro14.jpg", linkDownload:"assets/livros/pdf/seguranca.pdf"},
+    {titulo:"Design de Interfaces", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro16.jpg", linkDownload:"assets/livros/pdf/design.pdf"},
+    {titulo:"Inglês Corporativo", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro19.jpg", linkDownload:"assets/livros/pdf/ingles.pdf"},
+    {titulo:"Realidade Virtual", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro21.jpg", linkDownload:"assets/livros/pdf/vr.pdf"},
+
+    // Livros pagos
+    {titulo:"Node.js Avançado", autor:"R. Gustavo", preco:"25 USD", digital:true, fisico:true, capa:"assets/livros/livro2.jpg"},
+    {titulo:"React do Zero", autor:"R. Gustavo", preco:"30 USD", digital:true, fisico:true, capa:"assets/livros/livro4.jpg"},
+    {titulo:"Vue.js Prático", autor:"R. Gustavo", preco:"35 USD", digital:true, fisico:true, capa:"assets/livros/livro8.jpg"},
+    {titulo:"Machine Learning", autor:"R. Gustavo", preco:"50 USD", digital:true, fisico:true, capa:"assets/livros/livro9.jpg"},
     {titulo:"Docker Básico", autor:"R. Gustavo", preco:"30 USD", digital:true, fisico:true, capa:"assets/livros/livro12.jpg"},
     {titulo:"Kubernetes Avançado", autor:"R. Gustavo", preco:"45 USD", digital:true, fisico:true, capa:"assets/livros/livro13.jpg"},
-    {titulo:"Segurança em Redes", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro14.jpg", linkDownload:"assets/livros/pdf/seguranca.pdf"},
     {titulo:"Programação Funcional", autor:"R. Gustavo", preco:"25 USD", digital:true, fisico:true, capa:"assets/livros/livro15.jpg"},
-    {titulo:"Design de Interfaces", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro16.jpg", linkDownload:"assets/livros/pdf/design.pdf"},
     {titulo:"UX/UI Avançado", autor:"R. Gustavo", preco:"40 USD", digital:true, fisico:true, capa:"assets/livros/livro17.jpg"},
     {titulo:"Marketing Digital", autor:"R. Gustavo", preco:"30 USD", digital:true, fisico:true, capa:"assets/livros/livro18.jpg"},
-    {titulo:"Inglês Corporativo", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro19.jpg", linkDownload:"assets/livros/pdf/ingles.pdf"},
-    {titulo:"Arduino do Zero", autor:"R. Gustavo", preco:"25 USD", digital:true, fisico:true, capa:"assets/livros/livro20.jpg"},
-    {titulo:"Realidade Virtual", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro21.jpg", linkDownload:"assets/livros/pdf/vr.pdf"}
+    {titulo:"Arduino do Zero", autor:"R. Gustavo", preco:"25 USD", digital:true, fisico:true, capa:"assets/livros/livro20.jpg"}
 ];
 
 // Divs separadas
@@ -33,7 +34,7 @@ livros.forEach(livro => {
     card.className = 'livro-card';
     let buttonHTML = '';
 
-    if(livro.preco.toLowerCase() === "gratuito"){
+    if(livro.preco.toLowerCase() === "gratuito" && livro.linkDownload){
         buttonHTML = `<a href="${livro.linkDownload}" download><button>Download</button></a>`;
     } else {
         buttonHTML = `<button onclick="window.location.href='mailto:infolearn8441@gmail.com?subject=Compra ${encodeURIComponent(livro.titulo)}'">Comprar / Contato</button>`;
