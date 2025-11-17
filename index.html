@@ -23,9 +23,11 @@
 
         <section id="livros">
             <h2>Catálogo de Livros</h2>
-            <div class="livros-container">
-                <!-- Livros serão inseridos via JS -->
-            </div>
+            <h3>Gratuitos</h3>
+            <div class="livros-container" id="livros-gratis"></div>
+
+            <h3>À Venda</h3>
+            <div class="livros-container" id="livros-pagos"></div>
         </section>
 
         <section id="comentarios">
@@ -43,7 +45,7 @@
         <p>&copy; 2025 BookNest</p>
     </footer>
 
-    <!-- Botões de navegação movidos para baixo do rodapé -->
+    <!-- Botões de navegação móveis -->
     <div class="mobile-nav-buttons">
         <button id="btnExplorar">Explorar livros</button>
         <button id="btnFisicos">Livros Físicos</button>
@@ -56,18 +58,13 @@
         // Pesquisa de livros
         const searchInput = document.getElementById('searchInput');
         const searchBtn = document.getElementById('searchBtn');
-        const livrosContainer = document.querySelector('.livros-container');
 
         searchBtn.addEventListener('click', () => {
             const query = searchInput.value.toLowerCase();
-            const cards = livrosContainer.querySelectorAll('.livro-card');
+            const cards = document.querySelectorAll('.livro-card');
             cards.forEach(card => {
                 const titulo = card.querySelector('h3').textContent.toLowerCase();
-                if(titulo.includes(query)){
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
+                card.style.display = titulo.includes(query) ? 'block' : 'none';
             });
         });
     </script>
