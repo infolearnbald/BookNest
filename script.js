@@ -1,6 +1,6 @@
 // Livros exemplo (mais de 20), incluindo gratuitos com download
 const livros = [
-    {titulo:"JavaScript Básico", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro1.jpg", linkDownload:"assets/livros/pdf/js_basico.pdf"},
+    {titulo:"JavaScript Básico", autor:"Grag Mckeown", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro1.jpg", linkDownload:"assets/livros/pdf/js_basico.pdf"},
     {titulo:"CSS Moderno", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:true, capa:"assets/livros/livro3.jpg", linkDownload:"assets/livros/pdf/css_moderno.pdf"},
     {titulo:"Python para Iniciantes", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro5.jpg", linkDownload:"assets/livros/pdf/python.pdf"},
     {titulo:"HTML5 Essencial", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro7.jpg", linkDownload:"assets/livros/pdf/html5.pdf"},
