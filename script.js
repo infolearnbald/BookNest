@@ -1,15 +1,15 @@
 // Livros exemplo (mais de 20), incluindo gratuitos com download
 const livros = [
-    {titulo:"JavaScript Básico", autor:"Grag Mckeown", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro1.jpg", linkDownload:"assets/livros/pdf/js_basico.pdf"},
-    {titulo:"CSS Moderno", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:true, capa:"assets/livros/livro3.jpg", linkDownload:"assets/livros/pdf/css_moderno.pdf"},
-    {titulo:"Python para Iniciantes", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro5.jpg", linkDownload:"assets/livros/pdf/python.pdf"},
-    {titulo:"HTML5 Essencial", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro7.jpg", linkDownload:"assets/livros/pdf/html5.pdf"},
-    {titulo:"Banco de Dados MySQL", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro10.jpg", linkDownload:"assets/livros/pdf/mysql.pdf"},
-    {titulo:"Git e GitHub", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro11.jpg", linkDownload:"assets/livros/pdf/git.pdf"},
-    {titulo:"Segurança em Redes", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro14.jpg", linkDownload:"assets/livros/pdf/seguranca.pdf"},
-    {titulo:"Design de Interfaces", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro16.jpg", linkDownload:"assets/livros/pdf/design.pdf"},
-    {titulo:"Inglês Corporativo", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro19.jpg", linkDownload:"assets/livros/pdf/ingles.pdf"},
-    {titulo:"Realidade Virtual", autor:"R. Gustavo", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro21.jpg", linkDownload:"assets/livros/pdf/vr.pdf"},
+    {titulo:"Notas de um Velho safado", autor:"Charles Bukowski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro1.jpg", linkDownload:"assets/livros/pdf/notas.pdf"},
+    {titulo:"CSS Moderno", autor:"Clóvis de Barros Filho e Julio Pompeu", preco:"Gratuito", digital:true, fisico:true, capa:"assets/livros/livro3.jpg", linkDownload:"assets/livros/pdf/canalhas.pdf"},
+    {titulo:"Ghosting (Libertate para crescer)", autor:"Comandante Ciro", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro5.jpg", linkDownload:"assets/livros/pdf/ghosting.pdf"},
+    {titulo:"Gente Pobre", autor:"Fiodor Dostoievski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro7.jpg", linkDownload:"assets/livros/pdf/gente.pdf"},
+    {titulo:"Crime e Castigo", autor:"Fiodor Dostoievski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro10.jpg", linkDownload:"assets/livros/pdf/crime.pdf"},
+    {titulo:"O Corvo", autor:"Edgar Allan Poe", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro11.jpg", linkDownload:"assets/livros/pdf/Corvo.pdf"},
+    {titulo:"Um Novo Mundo", autor:"Eckhart Tolle", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro14.jpg", linkDownload:"assets/livros/pdf/mundo.pdf"},
+    {titulo:"O poder do Agora", autor:"Eckhart Tolle", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro16.jpg", linkDownload:"assets/livros/pdf/agora.pdf"},
+    {titulo:"O Simbolo", autor:"Brown Dan", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro19.jpg", linkDownload:"assets/livros/pdf/simbolo.pdf"},
+    {titulo:"O Sentido da vida", autor:"Dalai Lama", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro21.jpg", linkDownload:"assets/livros/pdf/lama.pdf"},
 
     // Livros pagos
     {titulo:"Node.js Avançado", autor:"R. Gustavo", preco:"25 USD", digital:true, fisico:true, capa:"assets/livros/livro2.jpg"},
