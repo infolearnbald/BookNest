@@ -1,11 +1,11 @@
 // Livros exemplo (mais de 20), incluindo gratuitos com download
 const livros = [
     {titulo:"Notas de um Velho safado", autor:"Charles Bukowski", preco:"Gratuito", digital:true, fisico:false, capa:"livro1.jpg", linkDownload:"assets/livros/pdf/notas.pdf"},
-    {titulo:"Somos Todos Canalhas", autor:"Clóvis de Barros Filho e Julio Pompeu", preco:"Gratuito", digital:true, fisico:true, capa:"assets/livros/livro3.jpg", linkDownload:"assets/livros/pdf/canalhas.pdf"},
+    {titulo:"Somos Todos Canalhas", autor:"Clóvis de Barros Filho e Julio Pompeu", preco:"Gratuito", digital:true, fisico:true, capa:"livro3.png", linkDownload:"assets/livros/pdf/canalhas.pdf"},
     {titulo:"Ghosting (Libertate para crescer)", autor:"Comandante Ciro", preco:"Gratuito", digital:true, fisico:false, capa:"ls.png", linkDownload:"ghosting.pdf"},
     {titulo:"Gente Pobre", autor:"Fiodor Dostoievski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro7.jpg", linkDownload:"assets/livros/pdf/gente.pdf"},
     {titulo:"Crime e Castigo", autor:"Fiodor Dostoievski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro10.jpg", linkDownload:"assets/livros/pdf/crime.pdf"},
-    {titulo:"O Corvo", autor:"Edgar Allan Poe", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro11.jpg", linkDownload:"assets/livros/pdf/Corvo.pdf"},
+    {titulo:"O Corvo", autor:"Edgar Allan Poe", preco:"Gratuito", digital:true, fisico:false, capa:"livro11.png", linkDownload:"Corvo.pdf"},
     {titulo:"Um Novo Mundo", autor:"Eckhart Tolle", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro14.jpg", linkDownload:"assets/livros/pdf/mundo.pdf"},
     {titulo:"O poder do Agora", autor:"Eckhart Tolle", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro16.jpg", linkDownload:"assets/livros/pdf/agora.pdf"},
     {titulo:"O Simbolo", autor:"Brown Dan", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro19.jpg", linkDownload:"assets/livros/pdf/simbolo.pdf"},
