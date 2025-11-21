@@ -2,7 +2,7 @@
 const livros = [
     {titulo:"Notas de um Velho safado", autor:"Charles Bukowski", preco:"Gratuito", digital:true, fisico:false, capa:"livro1.jpg", linkDownload:"assets/livros/pdf/notas.pdf"},
     {titulo:"Somos Todos Canalhas", autor:"Clóvis de Barros Filho e Julio Pompeu", preco:"Gratuito", digital:true, fisico:true, capa:"livro3.png", linkDownload:"canalha.pdf"},
-    {titulo:"Ghosting (Libertate para crescer)", autor:"Comandante Ciro", preco:"Gratuito", digital:true, fisico:false, capa:"ls.png", linkDownload:"ghosting.pdf"},
+    {titulo:"Ghosting (Libertate para crescer)", autor:"Comandante Ciro", preco:"Gratuito", digital:true, fisico:false, capa:"ls.png", linkDownload:"Ghosting.pdf"},
     {titulo:"Gente Pobre", autor:"Fiodor Dostoievski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro7.jpg", linkDownload:"assets/livros/pdf/gente.pdf"},
     {titulo:"Crime e Castigo", autor:"Fiodor Dostoievski", preco:"Gratuito", digital:true, fisico:false, capa:"assets/livros/livro10.jpg", linkDownload:"assets/livros/pdf/crime.pdf"},
     {titulo:"O Corvo", autor:"Edgar Allan Poe", preco:"Gratuito", digital:true, fisico:false, capa:"livro11.png", linkDownload:"Corvo.pdf"},
